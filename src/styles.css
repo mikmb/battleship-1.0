@@ -1,0 +1,131 @@
+body {
+  background-color: #f4f3ee;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #463f3a;
+  padding: 20px;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-boards-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+#game-setup-buttons {
+  display: flex;
+  /* margin-top: 20px; */
+  gap: 10px;
+  justify-content: center;
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #8a817c;
+  color: #f4f3ee;
+  font-size: 1rem;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  background-color: #bcb8b1;
+}
+
+.hidden {
+  display: none;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(10, 30px);
+  /* gap: 2px; */
+  /* padding: 10px; */
+  cursor: pointer;
+  margin-bottom: 1rem;
+  background-color: #4cc9f0;
+}
+
+.option-container {
+  display: flex;
+  /* flex-direction: column; */
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.destroyer-preview {
+  width: 60px;
+  height: 30px;
+  margin: 3px;
+  background-color: #bcb8b1;
+}
+
+.submarine-preview {
+  width: 90px;
+  height: 30px;
+  margin: 3px;
+  background-color: #bcb8b1;
+}
+
+.cruiser-preview {
+  width: 90px;
+  height: 30px;
+  margin: 3px;
+  background-color: #bcb8b1;
+}
+
+.battleship-preview {
+  width: 120px;
+  height: 30px;
+  margin: 3px;
+  background-color: #bcb8b1;
+}
+
+.carrier-preview {
+  width: 150px;
+  height: 30px;
+  margin: 3px;
+  background-color: #bcb8b1;
+}
+
+.board div {
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+#whose-go {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e0afa0;
+}
+#game-info {
+  display: flex;
+  flex-direction: column;
+  color: #463f3a;
+  font-size: 15px;
+  font-weight: 600;
+}
+#player-board .taken,
+#player-board .ship {
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+.hover {
+  background-color: #e0afa0;
+}
+
+.boom {
+  background-color: #e71d36 !important;
+}
+
+.miss {
+  background-color: #ff9f1c !important;
+}
